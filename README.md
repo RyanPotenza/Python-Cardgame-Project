@@ -1,2 +1,2 @@
 # Python-Cardgame-Project
-Developing a simple hearts game in python
+Developing a simple blackjack game in python
