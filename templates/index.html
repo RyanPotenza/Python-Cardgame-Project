@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div id="app">
+        <div class="background-image">
+            <div class="overlay"></div>
+        </div>
+        <div class="content">
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <p>Welcome to Blackjack! Follow these steps:</p>
+                <ol>
+                    <li>Enter your bet amount.</li>
+                    <li>Click "Deal" to start the game.</li>
+                    <li>Click "Hit" to request another card.</li>
+                    <li>Click "Stand" to keep your current hand.</li>
+                    <li>Click "Double Down" to double your bet and receive one more card.</li>
+                </ol>
+            </div>
+            <div class="game-section">
+                <h1>Blackjack</h1>
+                <div id="balance">Balance: ${{ balance }}</div>
+                <div id="game">
+                    <input type="number" id="bet" placeholder="Enter bet amount">
+                    <button id="deal-btn">Deal</button>
+                    <button id="hit-btn" disabled>Hit</button>
+                    <button id="stand-btn" disabled>Stand</button>
+                    <button id="double-btn" disabled>Double Down</button>
+                </div>
+                <div id="player-hand" class="hand">
+                    <h3>Player's Hand:</h3>
+                </div>
+                <div id="dealer-hand" class="hand">
+                    <h3>Dealer's Hand:</h3>
+                </div>
+                <div id="message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+
+

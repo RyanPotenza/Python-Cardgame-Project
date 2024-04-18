@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    background-image: url('blackjack.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.instructions {
+    margin-right: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+    color: #333;
+}
+
+.instructions p {
+    color: #555;
+}
+
+.instructions ol {
+    color: #555;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+.game-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.game-section h1,
+#balance,
+#message {
+    color: black;
+}
+
+#balance {
+    margin-bottom: 20px;
+}
+
+#game {
+    margin-bottom: 20px;
+}
+
+.hand {
+    margin-top: 20px;
+}
+
+.card {
+    display: inline-block;
+    width: 50px;
+    height: 70px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: black;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f0ad4e;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
